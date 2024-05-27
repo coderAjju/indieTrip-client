@@ -10,6 +10,7 @@ import Blogs from './components/Blogs/Blogs.jsx'
 import Service from './components/Services/Service.jsx'
 import Destinations from './components/Destinations/Destinations.jsx'
 import SpecialPackages from './components/SpecialPackages/SpecialPackages.jsx'
+import { GroupTour } from './components/GroupTour/GroupTour.jsx'
 
 const router = createBrowserRouter([
   {
@@ -33,8 +34,8 @@ const router = createBrowserRouter([
         element:<Service/>
       },
       {
-        path:"form",
-        element:<Form/>
+        path:"grouptour",
+        element:<GroupTour/>
       },
       {
         path:"destinations",
@@ -43,6 +44,10 @@ const router = createBrowserRouter([
       {
         path:"specialPackages",
         element:<SpecialPackages/>
+      },
+      {
+        path:"form",
+        element:<Form/>
       }
     ]
   }

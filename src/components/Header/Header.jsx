@@ -1,30 +1,31 @@
 import React, { useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import { Bars3BottomRightIcon,XMarkIcon } from '@heroicons/react/24/solid'
+import logo from '../../assets/logo.png'
 
 const Navbar = () => {
   let links = [
     {name:'Home',link:"/",id:1},
     {name:'Visa',link:"/Visa",id:2},
     {name:"Blogs",link:"/Blog",id:3},
-    {name:"Group Tour",link:"/form",id:4},
+    {name:"Group Tour",link:"/grouptour",id:4},
     {name:"Our Services",link:"/Serivce",id:5}
   ]
 
   const [isOpen, setisOpen] = useState(false);
 
   return(
-    <div className=' shadow-md w-full sticky top-0 z-[1] left-0 bg-white'>
-      <div className='md:px-10 py-4 px-7 md:flex justify-between items-center '>
+    <div className=' shadow-md w-full sticky top-[-2px] left-0 bg-white z-[2]'>
+      <div className='md:px-10 px-7 flex justify-between items-center '>
         {/* logo */}
-        <div>
-          <Link to='/'>
-            logo
+        <div className=''>
+          <Link to='/' className='flex justify-center items-center'>
+            <img className=' w-14 md:w-16' src={logo} alt="logo" /> <span className=' font-bold'>IndieTrip</span>
           </Link>
         </div>
 
         {/* menu icon */}
-        <div onClick={()=>setisOpen(!isOpen)} className='w-7 h-7 absolute right-8 top-5 cursor-pointer md:hidden'>
+        <div onClick={()=>setisOpen(!isOpen)} className='w-7 h-7 absolute right-8 top-3 cursor-pointer md:hidden'>
             {
                 isOpen ? <XMarkIcon/> : <Bars3BottomRightIcon/>
             }
