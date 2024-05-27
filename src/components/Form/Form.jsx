@@ -29,7 +29,6 @@ const ContactForm = () => {
 
     return (
         <div>
-            <h1>Contact Form</h1>
             <form onSubmit={handleSubmit} className='flex justify-center items-center flex-col'>
                 <div className='SingleInput'>
                     <label htmlFor="name">Name:</label>
