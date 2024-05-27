@@ -15,11 +15,11 @@ const ContactForm = () => {
             [name]: value
         });
     };
-    axios.defaults.withCredentials = true;
+
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post('https://indie-trip-server.vercel.app/submit-form', formData);
+            const response = await axios.post('http://localhost:3000/submit-form', formData);
             alert(response.data);
         } catch (error) {
             console.error('There was an error submitting the form!', error);
