@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios'
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 const Form = () => {
   const [formData, setFormData] = useState({
     name: '',
@@ -25,6 +27,10 @@ const handleSubmit = async (e) => {
             alert('There was an error submitting the form.');
         }
     };
+
+    const SuccessfullToast = () =>{
+      toast.success('Successfully toasted!');
+    }
 
   return (
     <div className=" md:w-[400px] w-[90%] mx-auto bg-white p-8 shadow-md rounded-lg">
@@ -98,6 +104,7 @@ const handleSubmit = async (e) => {
         <div className="text-center">
           <button
             type="submit"
+            onClick={SuccessfullToast}
             className="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600"
           >
             Submit

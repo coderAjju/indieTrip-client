@@ -4,12 +4,15 @@ import visaLogo from '../../assets/visa-logo.svg'
 import paytmLogo from '../../assets/paytm-logo.svg'
 import upiLogo from '../../assets/upi-logo.svg'
 import googlePayLogo from '../../assets/google-pay-logo.svg'
+import logo from '../../assets/logo.png'
 const Footer = () => {
   return (
     <div className="bg-gray-600 text-black p-6">
       <div className="flex flex-col md:flex-row justify-between gap-3">
         <div className="mb-6 md:mb-0 md:w-[500px]">
-          <h2 className="font-bold text-xl text-white">Indie Trip</h2>
+        <Link to='/' className='flex justify-start items-center'>
+            <img className=' w-14 md:w-16 contrast-200' src={logo} alt="logo" /> <span className=' font-bold text-white'>IndieTrip</span>
+          </Link>
           <div className="mt-4">
             <div className="flex items-start mb-4">
               <span className="mr-2">🌍</span>

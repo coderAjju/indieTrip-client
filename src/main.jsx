@@ -11,47 +11,37 @@ import Service from './components/Services/Service.jsx'
 import Destinations from './components/Destinations/Destinations.jsx'
 import SpecialPackages from './components/SpecialPackages/SpecialPackages.jsx'
 import { GroupTour } from './components/GroupTour/GroupTour.jsx'
+import GoaPackages from './components/Packages/GoaPackages.jsx'
+import AyodhyaPackage from './components/Packages/AyodhyaPackage.jsx'
+import TajMahalPackage from './components/Packages/TajMahalPackage.jsx'
+import KashiPackage from './components/Packages/KashiPackage.jsx'
 
 const router = createBrowserRouter([
   {
-    path:'/',
-    element:<App/>,
-    children:[
+    path: '/',
+    element: <App />,
+    children: [
+      { index: true, element: <Home /> },
+      { path: 'visa', element: <Visa /> },
+      { path: 'blog', element: <Blogs /> },
+      { path: 'service', element: <Service /> },
+      { path: 'grouptour', element: <GroupTour /> },
+      { path: 'destinations', element: <Destinations /> },
       {
-        path:"",
-        element:<Home/>
+        path: 'specialPackages',
+        element: <SpecialPackages />,
+        children: [
+          { path: 'goaPackage', element: <GoaPackages /> },
+          { path: 'ayodhyaPackage', element: <AyodhyaPackage /> },
+          { path: 'tajmahalPackage', element: <TajMahalPackage /> },
+          { path: 'kashiPackage', element:<KashiPackage/>}
+        ]
       },
-      {
-        path:"visa",
-        element:<Visa/>
-      },
-      {
-        path:"Blog",
-        element:<Blogs/>
-      },
-      {
-        path:"Serivce",
-        element:<Service/>
-      },
-      {
-        path:"grouptour",
-        element:<GroupTour/>
-      },
-      {
-        path:"destinations",
-        element:<Destinations/>
-      },
-      {
-        path:"specialPackages",
-        element:<SpecialPackages/>
-      },
-      {
-        path:"form",
-        element:<Form/>
-      }
+      { path: 'form', element: <Form /> }
     ]
   }
-])
+]);
+
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>

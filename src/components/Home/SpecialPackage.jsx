@@ -11,7 +11,7 @@ const SpecialPackage = () => {
             <div className='md:w-[1200px] mx-auto'>
                 <h1 className='font-bold md:text-4xl py-8 text-3xl md:pl-0 pl-2'>Special Packages</h1>
                 <div className=' flex md:justify-between md:flex-nowrap sm:flex-wrap items-center gap-7 flex-col md:flex-row'>
-                    <Link >
+                    <Link to="specialPackages/goaPackage">
                         <div className='shadow-md inline-block spCard transition-all hover:shadow-xl'>
                             <div className='w-72 h-64 overflow-hidden rounded-md '>
                                 <img className=' w-full h-full transition-all ease-in duration-100 rounded-t-md' src={spImage1} alt="not found" />
