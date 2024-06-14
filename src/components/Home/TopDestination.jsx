@@ -10,16 +10,16 @@ const CardsData = [
   {
     id: 1,
     img: Photo1,
-    title: "destination1",
+    title: "destination",
     link: "",
-    // desc: "Each character will appear one by one",
+    desc: "Each character will appear one by one",
   },
-  {
+  { 
     id: 2,
     img: Photo2,
     title: "destination2",
     link: "",
-    // desc: "Each character will appear one by one",
+    desc: "Each character will appear one by one",
   },
   {
     id: 3,
@@ -54,16 +54,16 @@ const TopDestination = () => {
                 className="w-full h-full max-w-[300px] rounded-lg"
               />
               {/* overlay section */}
-              <div className="absolute left-0 top-[-100%] opacity-0 group-hover:opacity-100 group-hover:top-[0] p-4 w-full h-full bg-black/60 group-hover:backdrop-blur-sm duration-500">
+              <div className="absolute left-0 top-0 opacity-100 p-4 w-full h-full bg-black/60 backdrop-blur-sm duration-500 lg:top-[-100%] lg:opacity-0 lg:group-hover:opacity-100 lg:group-hover:top-0 lg:group-hover:backdrop-blur-sm">
                 <div className="space-y-4">
                   <Slide cascade>
                     <h1 className="text-3xl font-bold">{title}</h1>
-                    {/* <Fade cascade damping={0.05}>
+                    <Fade cascade damping={0.05} className=" flex-wrap">
                       {desc}
-                    </Fade> */}
+                    </Fade>
                     <div>
                       <Link>
-                        <button className="border border-white px-4 py-2 rounded-lg hover:bg-black/20 duration-300">
+                        <button className="border border-white px-4 py-2 rounded-lg hover:bg-black/20 duration-300 hover:bg-blue-600">
                           View
                         </button>
                       </Link>
