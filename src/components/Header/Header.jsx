@@ -9,7 +9,6 @@ const Navbar = () => {
     {name:'Visa',link:"/Visa",id:2},
     {name:"Blogs",link:"/Blog",id:3},
     {name:"Group Tour",link:"/grouptour",id:4},
-    {name:"Our Services",link:"/Serivce",id:5}
   ]
 
   const [isOpen, setisOpen] = useState(false);

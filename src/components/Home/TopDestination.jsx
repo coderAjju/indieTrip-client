@@ -12,28 +12,24 @@ const CardsData = [
     img: Photo1,
     title: "destination",
     link: "",
-    desc: "Each character will appear one by one",
   },
   { 
     id: 2,
     img: Photo2,
     title: "destination2",
     link: "",
-    desc: "Each character will appear one by one",
   },
   {
     id: 3,
     img: Photo3,
     title: "destination3",
     link: "",
-    // desc: "Each character will appear one by one",
   },
   {
     id: 4,
     img: Photo4,
     title: "destination4",
     link: "",
-    // desc: "Each character will appear one by one",
   },
 ];
 const TopDestination = () => {
@@ -58,9 +54,6 @@ const TopDestination = () => {
                 <div className="space-y-4">
                   <Slide cascade>
                     <h1 className="text-3xl font-bold">{title}</h1>
-                    <Fade cascade damping={0.05} className=" flex-wrap">
-                      {desc}
-                    </Fade>
                     <div>
                       <Link>
                         <button className="border border-white px-4 py-2 rounded-lg hover:bg-black/20 duration-300 hover:bg-blue-600">

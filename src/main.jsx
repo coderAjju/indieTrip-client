@@ -15,6 +15,7 @@ import GoaPackages from './components/Packages/GoaPackages.jsx'
 import AyodhyaPackage from './components/Packages/AyodhyaPackage.jsx'
 import TajMahalPackage from './components/Packages/TajMahalPackage.jsx'
 import KashiPackage from './components/Packages/KashiPackage.jsx'
+import OutletofSpecialPackage from './components/SpecialPackages/OutletofSpecialPackage.jsx'
 
 const router = createBrowserRouter([
   {
@@ -24,12 +25,12 @@ const router = createBrowserRouter([
       { index: true, element: <Home /> },
       { path: 'visa', element: <Visa /> },
       { path: 'blog', element: <Blogs /> },
-      { path: 'service', element: <Service /> },
       { path: 'grouptour', element: <GroupTour /> },
       { path: 'destinations', element: <Destinations /> },
+      {path:'specialPackages',element:<SpecialPackages/>},
       {
-        path: 'specialPackages',
-        element: <SpecialPackages />,
+        path: 'package',
+        element: <OutletofSpecialPackage />,
         children: [
           { path: 'goaPackage', element: <GoaPackages /> },
           { path: 'ayodhyaPackage', element: <AyodhyaPackage /> },
