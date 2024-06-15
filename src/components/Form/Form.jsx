@@ -20,7 +20,7 @@ const Form = () => {
 const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post('http://localhost:4000/submit-form', formData);
+            const response = await axios.post('ajay-upadhyays-projects/indie-trip-backend/submit-form', formData);
             alert(response.data);
         } catch (error) {
             console.error('There was an error submitting the form!', error);
