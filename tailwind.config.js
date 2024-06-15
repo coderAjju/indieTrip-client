@@ -5,7 +5,11 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      height: {
+        'h-screen-minus': (value) => `calc(h-screen - ${value})`,
+      },
+    },
   },
   plugins: [],
 }

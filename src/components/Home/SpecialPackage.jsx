@@ -1,9 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import spImage1 from '../../assets/specialPackage1.jpg'
-import spImage2 from '../../assets/specialPackage2.jpg'
-import spImage3 from '../../assets/specialPackage3.jpg'
-import spImage4 from '../../assets/specialPackage4.jpg'
+import goaPackage1 from '../../assets/Goa/goaPackage1.jpg'
+import spImage2 from '../../assets/ayodhya/ayodhyaPackage5.jpg'
+import himachalPradeshPackage2 from '../../assets/himachalPradesh/himachalPradeshPackage2.jpg'
+import vanarasiPackage1 from '../../assets/varanasi/varanasiPackage1.jpg'
 import './Home.css'
 const SpecialPackage = () => {
     return (
@@ -14,11 +14,11 @@ const SpecialPackage = () => {
                     <Link to="package/goaPackage">
                         <div className='shadow-md inline-block spCard transition-all hover:shadow-xl'>
                             <div className='w-72 h-64 overflow-hidden rounded-md relative'>
-                                <img className=' w-full h-full transition-all ease-in duration-100 rounded-t-md' src={spImage1} alt="not found" />
+                                <img className=' w-full h-full transition-all ease-in duration-100 rounded-t-md' src={goaPackage1} alt="not found" />
                                 <h1 className='absolute top-3 rounded-l-2xl font-semibold px-5 py-1 right-0 text-white bg-blue-600'>Package 1</h1>
                             </div>
                             <div className='py-4'>
-                                <h2 className='text-xl font-normal pl-2'>Goa</h2>
+                                <h2 className='text-xl font-normal pl-2'>Baga Beach, North Goa</h2>
                             </div>
                         </div>
                     </Link>
@@ -29,32 +29,33 @@ const SpecialPackage = () => {
                                 <h1 className='absolute top-3 rounded-l-2xl font-semibold px-5 py-1 right-0 text-white bg-blue-600'>Package 2</h1>
                             </div>
                             <div className='py-4'>
-                                <h2 className='text-xl font-normal pl-2'>Ayodhya</h2>
+                                <h2 className='text-xl font-normal pl-2'>Ram Mandir, Ayodhya</h2>
                             </div>
                         </div>
                     </Link>
                     <Link to="package/tajmahalPackage">
                         <div className='shadow-md inline-block spCard transition-all hover:shadow-xl'>
                             <div className='w-72 h-64 overflow-hidden rounded-md relative'>
-                                <img className=' w-full h-full transition-all ease-in duration-100 rounded-t-md' src={spImage3} alt="not found" />
+                                <img className=' w-full h-full transition-all ease-in duration-100 rounded-t-md' src={himachalPradeshPackage2} alt="not found" />
                                 <h1 className='absolute top-3 rounded-l-2xl font-semibold px-5 py-1 right-0 text-white bg-blue-600'>Package 3</h1>
                             </div>
                             <div className='py-4'>
-                                <h2 className='text-xl font-normal pl-2'>Agra</h2>
+                                <h2 className='text-xl font-normal pl-2'>Shimla, Himachal Pradesh</h2>
                             </div>
                         </div>
                     </Link>
                     <Link to="package/kashiPackage">
                         <div className='shadow-md inline-block spCard transition-all hover:shadow-xl'>
                             <div className='w-72 h-64 overflow-hidden rounded-md relative'>
-                                <img className=' w-full h-full transition-all ease-in duration-100 rounded-t-md' src={spImage4} alt="not found" />
+                                <img className=' w-full h-full transition-all ease-in duration-100 rounded-t-md' src={vanarasiPackage1} alt="not found" />
                                 <h1 className='absolute top-3 rounded-l-2xl font-semibold px-5 py-1 right-0 text-white bg-blue-600'>Package 4</h1>
                             </div>
                             <div className='py-4'>
-                                <h2 className='text-xl font-normal pl-2'>Kashi</h2>
+                                <h2 className='text-xl font-normal pl-2'>Assi Ghat, Varanasi</h2>
                             </div>
                         </div>
                     </Link>
+                    
                 </div>
                 <div className=' w-full flex justify-center items-center my-3 mt-6'>
                     <Link to='/specialPackages'>

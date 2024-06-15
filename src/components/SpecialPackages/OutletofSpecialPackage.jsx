@@ -6,7 +6,6 @@ const OutletofSpecialPackage = () => {
     return (
         <>
             <button onClick={() => navigate(-1)} className='ml-2 p-2 px-4 active:bg-blue-600 active:text-white border-gray-400 border-2 rounded'>Previous</button>
-
             <div>OutletofSpecialPackage</div>
             <Outlet />
         </>

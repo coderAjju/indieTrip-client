@@ -12,7 +12,6 @@ import SpecialPackages from './components/SpecialPackages/SpecialPackages.jsx'
 import { GroupTour } from './components/GroupTour/GroupTour.jsx'
 import GoaPackages from './components/Packages/GoaPackages.jsx'
 import AyodhyaPackage from './components/Packages/AyodhyaPackage.jsx'
-import TajMahalPackage from './components/Packages/TajMahalPackage.jsx'
 import KashiPackage from './components/Packages/KashiPackage.jsx'
 import OutletofSpecialPackage from './components/SpecialPackages/OutletofSpecialPackage.jsx'
 import OutletOfDestinations from './components/TopDestinations/OutletOfDestinations.jsx'
@@ -21,6 +20,7 @@ import VaranasiDestinations from './components/Destinations/VaranasiDestinations
 import GoaDestinations from './components/Destinations/GoaDestinations.jsx'
 import PrayagrajDestinations from './components/Destinations/PrayagrajDestinations.jsx'
 import HimachalPradeshDestinations from './components/Destinations/HimachalPradeshDestinations.jsx'
+import HimachalPradeshPackage from './components/Packages/HimachalPradeshPackage.jsx'
 const router = createBrowserRouter([
   {
     path: '/',
@@ -45,8 +45,8 @@ const router = createBrowserRouter([
         children: [
           { path: 'goaPackage', element: <GoaPackages /> },
           { path: 'ayodhyaPackage', element: <AyodhyaPackage /> },
-          { path: 'tajmahalPackage', element: <TajMahalPackage /> },
-          { path: 'kashiPackage', element:<KashiPackage/>}
+          { path: 'shimla', element: <HimachalPradeshPackage /> },
+          { path: 'kashiPackage', element:<KashiPackage/>},
         ]
       },
       { path: 'form', element: <Form /> }

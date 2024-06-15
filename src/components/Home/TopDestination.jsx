@@ -1,15 +1,16 @@
 import React from "react";
-import Photo1 from "../../assets/destination1.jpg";
 import Photo2 from "../../assets/destination2.jpg";
-import Photo3 from "../../assets/destination3.jpg";
-import Photo4 from "../../assets/destination4.jpg";
+import himachalPradesh from '../../assets/himachalPradesh/himachalPradeshPackage1.jpg'
+import varanasi from '../../assets/varanasi/varanasiPackage1.jpg'
+import ayodhyaPackage1 from '../../assets/ayodhya/ayodhyaPackage1.jpg'
+
 import { Slide, Fade } from "react-awesome-reveal";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 const CardsData = [
   {
     id: 1,
-    img: Photo1,
+    img: ayodhyaPackage1,
     title: "Ayodhya",
     link: "destination/ayodhya",
   },
@@ -21,13 +22,13 @@ const CardsData = [
   },
   {
     id: 3,
-    img: Photo3,
+    img: varanasi,
     title: "Varanasi",
     link: "destination/varanasi",
   },
   {
     id: 4,
-    img: Photo4,
+    img: himachalPradesh,
     title: "Himachal Pradesh",
     link: "destination/himachal Pradesh",
   },
@@ -49,7 +50,7 @@ const TopDestination = () => {
               <img
                 src={img}
                 alt=""
-                className="w-full h-full max-w-[300px] rounded-lg"
+                className="w-full h-full max-w-[300px] rounded-lg object-cover"
               />
               {/* overlay section */}
               <div className="absolute left-0 top-0 opacity-100 p-4 w-full h-full bg-black/60 backdrop-blur-sm duration-500 lg:top-[-100%] lg:opacity-0 lg:group-hover:opacity-100 lg:group-hover:top-0 lg:group-hover:backdrop-blur-sm">

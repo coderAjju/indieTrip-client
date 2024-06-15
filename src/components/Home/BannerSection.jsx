@@ -7,17 +7,17 @@ const slides = [
     {
         id: 1,
         image: image1,
-        text: 'First Slide Text'
+        text: 'The real joy of life is in the journey'
     },
     {
         id: 2,
         image: image2,
-        text: 'Second Slide Text'
+        text: 'Traveling helps you know yourself better'
     },
     {
         id: 3,
         image: image3,
-        text: 'Third Slide Text'
+        text: 'Life is short and the world is wide'
     }
 ];
 

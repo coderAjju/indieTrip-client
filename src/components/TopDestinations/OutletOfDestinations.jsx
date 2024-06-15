@@ -4,10 +4,7 @@ import { Outlet } from 'react-router-dom'
 const OutletOfDestinations = () => {
   return (
     <>
-    
-        <div>OutletOfDestinations</div>
         <Outlet/>
-
     </>
   )
 }
