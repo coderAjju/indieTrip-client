@@ -13,48 +13,52 @@ const SpecialPackage = () => {
                 <div className=' flex md:justify-between md:flex-nowrap sm:flex-wrap items-center gap-7 flex-col md:flex-row'>
                     <Link to="package/goaPackage">
                         <div className='shadow-md inline-block spCard transition-all hover:shadow-xl'>
-                            <div className='w-72 h-64 overflow-hidden rounded-md '>
+                            <div className='w-72 h-64 overflow-hidden rounded-md relative'>
                                 <img className=' w-full h-full transition-all ease-in duration-100 rounded-t-md' src={spImage1} alt="not found" />
+                                <h1 className='absolute top-3 rounded-l-2xl font-semibold px-5 py-1 right-0 text-white bg-blue-600'>Package 1</h1>
                             </div>
                             <div className='py-4'>
-                                <h2 className='text-xl font-normal pl-2'>Special Package 1</h2>
+                                <h2 className='text-xl font-normal pl-2'>Goa</h2>
                             </div>
                         </div>
                     </Link>
                     <Link to="package/ayodhyaPackage">
                         <div className='shadow-md inline-block spCard transition-all hover:shadow-xl'>
-                            <div className='w-72 h-64 overflow-hidden rounded-md '>
+                            <div className='w-72 h-64 overflow-hidden rounded-md relative '>
                                 <img className=' w-full h-full transition-all ease-in duration-200 rounded-t-md' src={spImage2} alt="not found" />
+                                <h1 className='absolute top-3 rounded-l-2xl font-semibold px-5 py-1 right-0 text-white bg-blue-600'>Package 2</h1>
                             </div>
                             <div className='py-4'>
-                                <h2 className='text-xl font-normal pl-2'>Special Package 1</h2>
+                                <h2 className='text-xl font-normal pl-2'>Ayodhya</h2>
                             </div>
                         </div>
                     </Link>
                     <Link to="package/tajmahalPackage">
                         <div className='shadow-md inline-block spCard transition-all hover:shadow-xl'>
-                            <div className='w-72 h-64 overflow-hidden rounded-md '>
+                            <div className='w-72 h-64 overflow-hidden rounded-md relative'>
                                 <img className=' w-full h-full transition-all ease-in duration-100 rounded-t-md' src={spImage3} alt="not found" />
+                                <h1 className='absolute top-3 rounded-l-2xl font-semibold px-5 py-1 right-0 text-white bg-blue-600'>Package 3</h1>
                             </div>
                             <div className='py-4'>
-                                <h2 className='text-xl font-normal pl-2'>Special Package 1</h2>
+                                <h2 className='text-xl font-normal pl-2'>Agra</h2>
                             </div>
                         </div>
                     </Link>
                     <Link to="package/kashiPackage">
                         <div className='shadow-md inline-block spCard transition-all hover:shadow-xl'>
-                            <div className='w-72 h-64 overflow-hidden rounded-md '>
+                            <div className='w-72 h-64 overflow-hidden rounded-md relative'>
                                 <img className=' w-full h-full transition-all ease-in duration-100 rounded-t-md' src={spImage4} alt="not found" />
+                                <h1 className='absolute top-3 rounded-l-2xl font-semibold px-5 py-1 right-0 text-white bg-blue-600'>Package 4</h1>
                             </div>
                             <div className='py-4'>
-                                <h2 className='text-xl font-normal pl-2'>Special Package 1</h2>
+                                <h2 className='text-xl font-normal pl-2'>Kashi</h2>
                             </div>
                         </div>
                     </Link>
                 </div>
                 <div className=' w-full flex justify-center items-center my-3 mt-6'>
                     <Link to='/specialPackages'>
-                        <button className=' bg-blue-600 px-4 py-1 text-white font-medium rounded'>View all special packages</button>
+                        <button className=' bg-blue-600 px-4 py-1 text-white font-medium rounded hover:bg-blue-700 transition ease-in duration-75   '>View all special packages</button>
                     </Link>
                 </div>
             </div>

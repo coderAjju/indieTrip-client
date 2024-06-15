@@ -10,7 +10,7 @@ const SpecialPackages = () => {
     const navigate = useNavigate();
     return (
         <>
-            <div className='md:w-[1200px] mx-auto py-4'>
+            <div className='md:w-[1200px] sm:w-[600px] mx-auto py-4'>
                 <button onClick={()=>navigate(-1)} className='ml-2 p-2 px-4 active:bg-blue-600 active:text-white border-gray-400 border-2 rounded'>Previous</button>
                 <h1 className='font-bold md:text-4xl py-4 text-3xl  md:pl-0 pl-2'>Special Packages</h1>
                 <div className=' flex flex-wrap gap-4 md:justify-start md:items-start items-center justify-center'>
