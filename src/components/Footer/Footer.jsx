@@ -23,7 +23,7 @@ const Footer = () => {
             <div className="flex items-start mb-4">
               <span className="mr-2">🔄</span>
               <div className='text-white'>
-                <strong>Convenience:</strong> We seamlessly coordinate flights, transfers, and tours for a hassle-free journey.
+                <strong>Convenience:</strong> We seamlessly coordinate flights, transfers, and tours for Link hassle-free journey.
               </div>
             </div>
             <div className="flex items-start">
@@ -37,12 +37,12 @@ const Footer = () => {
         <div className="mb-6 md:mb-0 text-white">
           <h2 className="font-bold text-xl">Related Links</h2>
           <ul className="mt-4">
-            <li><a href="#" className="hover:text-gray-400">Home</a></li>
-            <li><a href="#" className="hover:text-gray-400">About Us</a></li>
-            <li><a href="#" className="hover:text-gray-400">Contact Us</a></li>
-            <li><a href="#" className="hover:text-gray-400">Our Services</a></li>
-            <li><a href="#" className="hover:text-gray-400">Terms and Conditions</a></li>
-            <li><a href="#" className="hover:text-gray-400">Our Policy</a></li>
+            <li><Link className="hover:text-gray-400">Home</Link></li>
+            <li><Link className="hover:text-gray-400">About Us</Link></li>
+            <li><Link className="hover:text-gray-400">Contact Us</Link></li>
+            <li><Link className="hover:text-gray-400">Our Services</Link></li>
+            <li><Link to="/termsCondition" className="hover:text-gray-400">Terms and Conditions</Link></li>
+            <li><Link to="/privacyPolicy" className="hover:text-gray-400">Our Policy</Link></li>
           </ul>
         </div>
         <div className="mb-6 md:mb-0 text-white">
@@ -73,7 +73,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="mt-6 text-center text-sm text-white">
-        © 2023 <Link className=' text-gray-400 hover:text-white'>Indie Trip</Link> All rights reserved. | Powered By TraviYo
+        © 2023 <Link to="/termsCondition" className=' text-gray-400 hover:text-white'>Indie Trip</Link> All rights reserved. | Powered By TraviYo
       </div>
     </div>
   );

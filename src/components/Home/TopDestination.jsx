@@ -37,10 +37,10 @@ const CardsData = [
 const TopDestination = () => {
   const navigate = useNavigate();
   return (
-    <div className="md:w-[1200px] mx-auto mt-2 mb-10">
+    <div className="lg:w-[1200px] md:w-[767px] mx-auto mt-2 mb-10">
       <h1 className=" w-full font-bold md:text-4xl py-8 text-3xl md:pl-0 pl-2">Top Destinations</h1>
       {/* cards section */}
-      <div className=" w-full flex md:justify-between items-center gap-7 flex-col md:flex-row">
+      <div className=" flex flex-wrap justify-evenly gap-7 lg:gap-4 ">
         {CardsData.map(({ id, img, title, link }) => {
           return (
             <div

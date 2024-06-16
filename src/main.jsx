@@ -21,7 +21,8 @@ import GoaDestinations from './components/Destinations/GoaDestinations.jsx'
 import PrayagrajDestinations from './components/Destinations/PrayagrajDestinations.jsx'
 import HimachalPradeshDestinations from './components/Destinations/HimachalPradeshDestinations.jsx'
 import HimachalPradeshPackage from './components/Packages/HimachalPradeshPackage.jsx'
-import ScrollToTop from './components/ScrollToTop.jsx'
+import TermsCondition from './components/TermsCondition.jsx'
+import PrivacyPolicy from './components/PrivacyPolicy.jsx'
 const router = createBrowserRouter([
   {
     path: '/',
@@ -31,6 +32,8 @@ const router = createBrowserRouter([
       { path: 'visa', element: <Visa /> },
       { path: 'blog', element: <Blogs /> },
       { path: 'grouptour', element: <GroupTour /> },
+      { path: 'termsCondition', element: <TermsCondition /> },
+      { path: 'privacyPolicy', element: <PrivacyPolicy /> },
       { path: 'destinations', element: <Destinations /> },
       {
         path: 'destination', element: <OutletOfDestinations />, children: [
