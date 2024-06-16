@@ -1,10 +1,10 @@
 import React from "react";
-import ayodhyaPackage1 from '../../assets/ayodhya/ayodhyaPackage1.jpg'
+import ayodhyaPackage1 from '../../assets/ayodhya/ayodhyaPackage1.jpg';
 import Photo2 from "../../assets/prayagraj/prayagrajPackage1.jpg";
 import Photo3 from "../../assets/varanasi/varanasiPackage1.jpg";
 import himachalPradesh from '../../assets/himachalPradesh/himachalPradeshPackage1.jpg'
-import { Slide, Fade } from "react-awesome-reveal";
-import { Link, useNavigate,useParams } from "react-router-dom";
+import { Slide } from "react-awesome-reveal";
+import { Link, useNavigate } from "react-router-dom";
 
 const CardsData = [
   {

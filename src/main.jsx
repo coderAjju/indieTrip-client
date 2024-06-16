@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
-import { RouterProvider, createBrowserRouter } from 'react-router-dom'
+import { RouterProvider, ScrollRestoration, createBrowserRouter } from 'react-router-dom'
 import Form from './components/Form/Form.jsx'
 import Home from './components/Home/Home.jsx'
 import Visa from './components/Visa/Visa.jsx'
@@ -21,6 +21,7 @@ import GoaDestinations from './components/Destinations/GoaDestinations.jsx'
 import PrayagrajDestinations from './components/Destinations/PrayagrajDestinations.jsx'
 import HimachalPradeshDestinations from './components/Destinations/HimachalPradeshDestinations.jsx'
 import HimachalPradeshPackage from './components/Packages/HimachalPradeshPackage.jsx'
+import ScrollToTop from './components/ScrollToTop.jsx'
 const router = createBrowserRouter([
   {
     path: '/',
@@ -31,14 +32,16 @@ const router = createBrowserRouter([
       { path: 'blog', element: <Blogs /> },
       { path: 'grouptour', element: <GroupTour /> },
       { path: 'destinations', element: <Destinations /> },
-      { path: 'destination', element: <OutletOfDestinations />, children:[
-        {path:"ayodhya",element:<AyodhyaDestinaitons/>},
-        {path:"varanasi",element:<VaranasiDestinations/>},
-        {path:"goa",element:<GoaDestinations/>},
-        {path:"prayagraj",element:<PrayagrajDestinations/>},
-        {path:"himachal Pradesh",element:<HimachalPradeshDestinations/>}
-      ]},
-      {path:'specialPackages',element:<SpecialPackages/>},
+      {
+        path: 'destination', element: <OutletOfDestinations />, children: [
+          { path: "ayodhya", element: <AyodhyaDestinaitons /> },
+          { path: "varanasi", element: <VaranasiDestinations /> },
+          { path: "goa", element: <GoaDestinations /> },
+          { path: "prayagraj", element: <PrayagrajDestinations /> },
+          { path: "himachal Pradesh", element: <HimachalPradeshDestinations /> }
+        ]
+      },
+      { path: 'specialPackages', element: <SpecialPackages /> },
       {
         path: 'package',
         element: <OutletofSpecialPackage />,
@@ -46,7 +49,7 @@ const router = createBrowserRouter([
           { path: 'goaPackage', element: <GoaPackages /> },
           { path: 'ayodhyaPackage', element: <AyodhyaPackage /> },
           { path: 'shimla', element: <HimachalPradeshPackage /> },
-          { path: 'kashiPackage', element:<KashiPackage/>},
+          { path: 'kashiPackage', element: <KashiPackage /> },
         ]
       },
       { path: 'form', element: <Form /> }
@@ -56,7 +59,7 @@ const router = createBrowserRouter([
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <RouterProvider router={router}/>
-  </React.StrictMode>,
+  <RouterProvider router={router}>
+    
+  </RouterProvider>
 )

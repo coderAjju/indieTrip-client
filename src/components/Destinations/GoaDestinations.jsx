@@ -2,11 +2,13 @@ import React from 'react'
 import homeImg from '../../assets/Goa/goaPackage3.jpg'
 import { Link, useNavigate } from 'react-router-dom'
 import goaPackage from '../../assets/Goa/goaPackage4.jpg'
+import ScrollToTop from '../ScrollToTop'
 
 const GoaDestinations = () => {
   const navigate = useNavigate();
   return (
     <>
+    <ScrollToTop />
       <div className=' w-full'>
         <img className=' object-contain lg:object-fill w-full lg:h-[700px]' src={homeImg} alt="ayodhyaImg" />
         <div className=' w-[90%] mx-auto'>

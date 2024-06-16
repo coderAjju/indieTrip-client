@@ -2,10 +2,12 @@ import React from 'react'
 import homeImg from '../../assets/himachalPradesh/himachalPradeshPackage3.jpg'
 import { Link, useNavigate } from 'react-router-dom'
 import himachalPradeshPackage2 from '../../assets/himachalPradesh/himachalPradeshPackage2.jpg'
+import ScrollToTop from '../ScrollToTop'
 const HimachalPradeshDestinations = () => {
   const navigate = useNavigate();
   return (
     <>
+    <ScrollToTop />
       <div className=' w-full'>
         <img className=' object-contain lg:object-fill w-full lg:h-[700px]' src={homeImg} alt="ayodhyaImg" />
         <div className=' w-[90%] mx-auto'>
