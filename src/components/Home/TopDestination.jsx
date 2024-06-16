@@ -1,5 +1,5 @@
 import React from "react";
-import Photo2 from "../../assets/destination2.jpg";
+import Photo2 from "../../assets/prayagraj/prayagrajPackage1.jpg";
 import himachalPradesh from '../../assets/himachalPradesh/himachalPradeshPackage1.jpg'
 import varanasi from '../../assets/varanasi/varanasiPackage1.jpg'
 import ayodhyaPackage1 from '../../assets/ayodhya/ayodhyaPackage1.jpg'
