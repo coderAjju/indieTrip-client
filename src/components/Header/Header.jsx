@@ -14,12 +14,12 @@ const Navbar = () => {
   const [isOpen, setisOpen] = useState(false);
 
   return(
-    <div className=' shadow-md w-full sticky top-[-2px] left-0 bg-white z-[2]'>
+    <div className=' shadow-md w-full sticky top-[-2px] py-2 left-0 bg-white z-[2]'>
       <div className='md:px-10 px-7 flex justify-between items-center '>
         {/* logo */}
         <div className=''>
           <Link to='/' className='flex justify-center items-center'>
-            <img className=' w-14 md:w-16' src={logo} alt="logo" /> <span className=' font-bold'>IndieTrip</span>
+            <img className=' w-36' src={logo} alt="logo" />
           </Link>
         </div>
 
