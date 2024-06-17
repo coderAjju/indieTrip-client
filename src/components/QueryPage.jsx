@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import axios from 'axios'
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-const Form = () => {
+const QueryPage = () => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -33,7 +33,7 @@ const handleSubmit = async (e) => {
     }
 
   return (
-    <div className="mt-4 md:w-[400px] w-[90%] h-[690px] mx-auto bg-white p-8 shadow-md rounded-lg">
+    <div className="my-4 bg-blue-400 md:w-[400px] w-[90%] h-[690px] mx-auto p-8 shadow-md rounded-lg">
       <h2 className="text-2xl font-bold mb-6">Travel Inquiry Form</h2>
       <form onSubmit={handleSubmit}>
         <div className="mb-4">
@@ -115,4 +115,4 @@ const handleSubmit = async (e) => {
   );
 };
 
-export default Form;
+export default QueryPage;

@@ -38,7 +38,7 @@ const Navbar = () => {
             </li>
           )}
           <li className='flex justify-start items-center'>
-            <Link onClick={()=>setisOpen(!isOpen)} to="/form" className='btn bg-blue-600 text-white py-1 px-3 md:ml-8 rounded md:static'>Any Query</Link>
+            <Link onClick={()=>setisOpen(!isOpen)} to="/queryPage" className='btn bg-blue-600 text-white py-1 px-3 md:ml-8 rounded md:static'>Any Query</Link>
           </li>
         </ul>
       </div>

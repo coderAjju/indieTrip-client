@@ -28,6 +28,7 @@ import ShimlaHimachalPradeshPackages from './components/Packages/ShimlaHimachalP
 import AssiGhatVaranasiPackage from './components/Packages/AssiGhatVaranasiPackage.jsx'
 import BagaBeachGoaPackages from './components/Packages/BagaBeachGoaPackages.jsx'
 import RamMandirPackage from './components/Packages/RamMandirPackage.jsx'
+import QueryPage from './components/QueryPage.jsx'
 const router = createBrowserRouter([
   {
     path: '/',
@@ -40,6 +41,7 @@ const router = createBrowserRouter([
       { path: 'termsCondition', element: <TermsCondition /> },
       { path: 'privacyPolicy', element: <PrivacyPolicy /> },
       { path: 'destinations', element: <Destinations /> },
+      { path: 'queryPage', element: <QueryPage /> },
       {
         path: 'destination', element: <OutletOfDestinations />, children: [
           { path: "ayodhya", element: <AyodhyaDestinaitons /> },
