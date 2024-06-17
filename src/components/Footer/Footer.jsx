@@ -12,7 +12,7 @@ const Footer = () => {
         <div className="mb-6 md:mb-0 md:w-[500px]">
         <Link to='/' className='flex justify-start items-center'>
             <img className=' w-14 md:w-16 contrast-200' src={logo} alt="logo" /> <span className=' font-bold text-white'>IndieTrip</span>
-          </Link>
+           </Link>
           <div className="mt-4">
             <div className="flex items-start mb-4">
               <span className="mr-2">🌍</span>

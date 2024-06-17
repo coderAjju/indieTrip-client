@@ -1,7 +1,7 @@
 import React from 'react'
 import homeImg from '../../assets/prayagraj/prayagrajPackage1.jpg'
 import { Link, useNavigate } from 'react-router-dom'
-import vanarasiPackage1 from '../../assets/varanasi/varanasiPackage1.jpg'
+import prayagrajPackage1 from '../../assets/prayagraj/prayagrajPackage1.jpg'
 import ScrollToTop from '../ScrollToTop'
 const PrayagrajDestinations = () => {
   const navigate = useNavigate();
@@ -31,14 +31,14 @@ const PrayagrajDestinations = () => {
           <h1 className=' font-bold my-3 text-4xl mt-8 underline'>Special Packages</h1>
         </div>
         <div className=' flex my-6 md:w-[90%] md:mx-auto md:flex-nowrap sm:flex-wrap items-center gap-7 flex-col md:flex-row'>
-          <Link onClick={()=>navigate('package/kashiPackage')}>
+          <Link onClick={()=>navigate('/package/akbarFort')}>
             <div className='shadow-md inline-block spCard transition-all hover:shadow-xl'>
               <div className='w-72 h-64 overflow-hidden rounded-md relative'>
-                <img className=' w-full h-full transition-all ease-in duration-100 rounded-t-md' src={vanarasiPackage1} alt="not found" />
+                <img className=' w-full h-full transition-all ease-in duration-100 rounded-t-md' src={prayagrajPackage1} alt="not found" />
                 <h1 className='absolute top-3 rounded-l-2xl font-semibold px-5 py-1 right-0 text-white bg-blue-600'>Package 1</h1>
               </div>
               <div className='py-4'>
-                <h2 className='text-xl font-normal pl-2'>Assi Ghat, Varanasi</h2>
+                <h2 className='text-xl font-normal pl-2'>Akbar fort, Prayagraj</h2>
               </div>
             </div>
           </Link>

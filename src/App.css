@@ -1,0 +1,16 @@
+/* styles.css */
+.carousel {
+  @apply relative w-full h-full;
+}
+
+.slide {
+  @apply absolute top-0 right-0 w-full h-full transition-all duration-500;
+}
+
+.slide.active {
+  @apply opacity-100;
+}
+
+.slide:not(.active) {
+  @apply opacity-0;
+}

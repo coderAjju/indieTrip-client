@@ -10,9 +10,9 @@ import Blogs from './components/Blogs/Blogs.jsx'
 import Destinations from './components/TopDestinations/Destinations.jsx'
 import SpecialPackages from './components/SpecialPackages/SpecialPackages.jsx'
 import { GroupTour } from './components/GroupTour/GroupTour.jsx'
-import GoaPackages from './components/Packages/GoaPackages.jsx'
-import AyodhyaPackage from './components/Packages/AyodhyaPackage.jsx'
-import KashiPackage from './components/Packages/KashiPackage.jsx'
+import GoaPackages from './components/Packages/BagaBeachGoaPackages.jsx'
+import AyodhyaPackage from './components/Packages/RamMandirPackage.jsx'
+import KashiPackage from './components/Packages/AssiGhatVaranasiPackage.jsx'
 import OutletofSpecialPackage from './components/SpecialPackages/OutletofSpecialPackage.jsx'
 import OutletOfDestinations from './components/TopDestinations/OutletOfDestinations.jsx'
 import AyodhyaDestinaitons from './components/Destinations/AyodhyaDestinaitons.jsx'
@@ -20,9 +20,14 @@ import VaranasiDestinations from './components/Destinations/VaranasiDestinations
 import GoaDestinations from './components/Destinations/GoaDestinations.jsx'
 import PrayagrajDestinations from './components/Destinations/PrayagrajDestinations.jsx'
 import HimachalPradeshDestinations from './components/Destinations/HimachalPradeshDestinations.jsx'
-import HimachalPradeshPackage from './components/Packages/HimachalPradeshPackage.jsx'
+import HimachalPradeshPackage from './components/Packages/ShimlaHimachalPradeshPackage.jsx'
 import TermsCondition from './components/TermsCondition.jsx'
 import PrivacyPolicy from './components/PrivacyPolicy.jsx'
+import AkbarFortPrayagrajPackage from './components/Packages/AkbarFortPrayagrajPackage.jsx'
+import ShimlaHimachalPradeshPackages from './components/Packages/ShimlaHimachalPradeshPackage.jsx'
+import AssiGhatVaranasiPackage from './components/Packages/AssiGhatVaranasiPackage.jsx'
+import BagaBeachGoaPackages from './components/Packages/BagaBeachGoaPackages.jsx'
+import RamMandirPackage from './components/Packages/RamMandirPackage.jsx'
 const router = createBrowserRouter([
   {
     path: '/',
@@ -49,11 +54,12 @@ const router = createBrowserRouter([
         path: 'package',
         element: <OutletofSpecialPackage />,
         children: [
-          { path: 'goaPackage', element: <GoaPackages /> },
-          { path: 'ayodhyaPackage', element: <AyodhyaPackage /> },
-          { path: 'shimla', element: <HimachalPradeshPackage /> },
-          { path: 'kashiPackage', element: <KashiPackage /> },
-        ]
+          { path: 'bagaBeach', element: <BagaBeachGoaPackages /> },
+          { path: 'ramMandir', element: <RamMandirPackage /> },
+          { path: 'shimla', element: <ShimlaHimachalPradeshPackages /> },
+          { path: 'assiGhat', element: <AssiGhatVaranasiPackage /> },
+          { path: "akbarFort", element: <AkbarFortPrayagrajPackage /> }
+        ] 
       },
       { path: 'form', element: <Form /> }
     ]
@@ -63,6 +69,6 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <RouterProvider router={router}>
-    
+
   </RouterProvider>
 )

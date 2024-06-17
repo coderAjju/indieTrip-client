@@ -11,7 +11,7 @@ const SpecialPackage = () => {
             <div className='lg:w-[1200px] md:w-[767px] mx-auto'>
             <h1 className='font-bold md:text-4xl py-8 text-3xl  md:pl-0 pl-2'>Special Packages</h1>
                 <div className=' flex flex-wrap justify-evenly gap-7 lg:gap-4 '>
-                    <Link to="package/goaPackage">
+                    <Link to="/package/bagaBeach">
                         <div className='shadow-md spCard transition-all hover:shadow-xl'>
                             <div className='w-72 h-64 overflow-hidden rounded-md relative'>
                                 <img className=' w-full h-full transition-all ease-in duration-100 rounded-t-md' src={goaPackage1} alt="not found" />
@@ -22,7 +22,7 @@ const SpecialPackage = () => {
                             </div>
                         </div>
                     </Link>
-                    <Link to="package/ayodhyaPackage">
+                    <Link to="/package/ramMandir">
                         <div className='shadow-md  spCard transition-all hover:shadow-xl'>
                             <div className='w-72 h-64 overflow-hidden rounded-md relative '>
                                 <img className=' w-full h-full transition-all ease-in duration-200 rounded-t-md' src={spImage2} alt="not found" />
@@ -33,7 +33,7 @@ const SpecialPackage = () => {
                             </div>
                         </div>
                     </Link>
-                    <Link to="package/tajmahalPackage">
+                    <Link to="/package/shimla">
                         <div className='shadow-md spCard transition-all hover:shadow-xl'>
                             <div className='w-72 h-64 overflow-hidden rounded-md relative'>
                                 <img className=' w-full h-full transition-all ease-in duration-100 rounded-t-md' src={himachalPradeshPackage2} alt="not found" />
@@ -44,7 +44,7 @@ const SpecialPackage = () => {
                             </div>
                         </div>
                     </Link>
-                    <Link to="package/kashiPackage">
+                    <Link to="/package/assiGhat">
                         <div className='shadow-md spCard transition-all hover:shadow-xl'>
                             <div className='w-72 h-64 overflow-hidden rounded-md relative'>
                                 <img className=' w-full h-full transition-all ease-in duration-100 rounded-t-md' src={vanarasiPackage1} alt="not found" />

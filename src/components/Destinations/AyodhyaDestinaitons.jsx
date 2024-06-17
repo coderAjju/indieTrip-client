@@ -32,7 +32,7 @@ const AyodhyaDestinaitons = () => {
           <h1 className=' font-bold my-3 text-4xl mt-8 underline'>Special Packages</h1>
         </div>
         <div className=' flex my-6 md:w-[90%] md:mx-auto md:flex-nowrap sm:flex-wrap items-center gap-7 flex-col md:flex-row'>
-          <Link onClick={() => navigate('/package/ayodhyaPackage')}>
+          <Link onClick={() => navigate('/package/ramMandir')}>
             <div className='shadow-md inline-block spCard transition-all hover:shadow-xl'>
               <div className='w-72 h-64 overflow-hidden rounded-md relative '>
                 <img className=' w-full h-full transition-all ease-in duration-200 rounded-t-md' src={AyodhyaPackage1} alt="not found" />
