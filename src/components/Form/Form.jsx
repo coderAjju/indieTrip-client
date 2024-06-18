@@ -61,7 +61,7 @@ const handleSubmit = async (e) => {
         <div className="mb-4">
           <label className="block text-gray-700">Phone</label>
           <input
-            type="tel"
+            type="number"
             name="phone"
             value={formData.phone}
             onChange={handleChange}
@@ -83,7 +83,7 @@ const handleSubmit = async (e) => {
         <div className="mb-4">
           <label className="block text-gray-700">Travel Dates</label>
           <input
-            type="text"
+            type="date"
             name="travelDates"
             value={formData.travelDates}
             onChange={handleChange}
