@@ -42,13 +42,13 @@ const CardsData = [
 const Destinations = () => {
   const navigate = useNavigate();
   return (
-    <div className="md:w-[1200px] mx-auto py-1 pb-5 my-7">
-      <button onClick={() => navigate(-1)} className='ml-2 p-2 px-4 active:bg-blue-600 active:text-white border-gray-400 border-2 rounded'>Previous</button>
+    <div className="lg:w-[1200px] md:w-[767px] mx-auto">
+      <button onClick={() => navigate(-1)} className='mt-4 ml-2 p-2 px-4 active:bg-blue-600 active:text-white border-gray-400 border-2 rounded'>Previous</button>
       <h1 className=" w-full font-bold md:text-4xl py-3 text-3xl md:pl-0 pl-2">Top Destinations</h1>
       {/* cards section */}
-      <div className=" flex flex-wrap gap-4 md:justify-start md:items-start items-center justify-center">
+      <div className="mb-4 flex flex-wrap justify-center md:justify-start lg:px-0 px-0 md:px-6 md:gap-x-32 gap-7 lg:gap-4">
         {CardsData.map(({ id, img, title, link }) => {
-          return (
+          return (    
             <div
               key={id}
               className="text-white shadow-md rounded-lg overflow-hidden relative group w-72 h-96"

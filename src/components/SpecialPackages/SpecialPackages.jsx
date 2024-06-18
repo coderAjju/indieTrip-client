@@ -12,11 +12,11 @@ const SpecialPackages = () => {
     const navigate = useNavigate();
     return (
         <>
-            <div className='md:w-[1200px] sm:w-[600px] mx-auto py-4'>
-                <button onClick={()=>navigate(-1)} className='ml-2 p-2 px-4 active:bg-blue-600 active:text-white border-gray-400 border-2 rounded'>Previous</button>
+            <div className='lg:w-[1200px] md:w-[767px] mx-auto'>
+                <button onClick={() => navigate(-1)} className='ml-2 mt-4 p-2 px-4 active:bg-blue-600 active:text-white border-gray-400 border-2 rounded'>Previous</button>
                 <h1 className='font-bold md:text-4xl py-4 text-3xl  md:pl-0 pl-2'>Special Packages</h1>
-                <div className=' flex flex-wrap gap-4 md:justify-start md:items-start items-center justify-center'>
-                <Link onClick={()=>navigate("/package/bagaBeach")}>
+                <div className=' flex flex-wrap justify-center md:justify-start gap-7 lg:gap-4 lg:px-0 px-0 md:px-6 md:gap-x-32'>
+                    <Link onClick={() => navigate("/package/bagaBeach")}>
                         <div className='shadow-md inline-block spCard transition-all hover:shadow-xl'>
                             <div className='w-72 h-64 overflow-hidden rounded-md relative'>
                                 <img className=' w-full h-full transition-all ease-in duration-100 rounded-t-md' src={goaPackage1} alt="not found" />
@@ -27,7 +27,7 @@ const SpecialPackages = () => {
                             </div>
                         </div>
                     </Link>
-                    <Link onClick={()=>navigate("/package/ramMandir")}>
+                    <Link onClick={() => navigate("/package/ramMandir")}>
                         <div className='shadow-md inline-block spCard transition-all hover:shadow-xl'>
                             <div className='w-72 h-64 overflow-hidden rounded-md relative '>
                                 <img className=' w-full h-full transition-all ease-in duration-200 rounded-t-md' src={spImage2} alt="not found" />
@@ -38,7 +38,7 @@ const SpecialPackages = () => {
                             </div>
                         </div>
                     </Link>
-                    <Link onClick={()=>navigate("/package/assiGhat")}>
+                    <Link onClick={() => navigate("/package/assiGhat")}>
                         <div className='shadow-md inline-block spCard transition-all hover:shadow-xl'>
                             <div className='w-72 h-64 overflow-hidden rounded-md relative'>
                                 <img className=' w-full h-full transition-all ease-in duration-100 rounded-t-md' src={vanarasiPackage1} alt="not found" />
@@ -49,7 +49,7 @@ const SpecialPackages = () => {
                             </div>
                         </div>
                     </Link>
-                    
+
                     <Link onClick={() => navigate('/package/akbarFort')}>
                         <div className='shadow-md inline-block spCard transition-all hover:shadow-xl'>
                             <div className='w-72 h-64 overflow-hidden rounded-md relative'>
@@ -61,7 +61,7 @@ const SpecialPackages = () => {
                             </div>
                         </div>
                     </Link>
-                    <Link onClick={()=>navigate("/package/shimla")}>
+                    <Link onClick={() => navigate("/package/shimla")}>
                         <div className='shadow-md inline-block spCard transition-all hover:shadow-xl'>
                             <div className='w-72 h-64 overflow-hidden rounded-md relative'>
                                 <img className=' w-full h-full transition-all ease-in duration-100 rounded-t-md' src={himachalpradesh} alt="not found" />
