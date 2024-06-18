@@ -58,7 +58,7 @@ const Footer = () => {
         <div>
           <h2 className="font-bold text-xl text-white">Connect With Us</h2>
           <div className="flex mt-4 space-x-2">
-            <a href = "https://www.facebook.com/people/IndieTrip/61558576468798/" className="hover:text-blue-700  text-[#1877F2] text-3xl transition-all"><i class="fa-brands fa-square-facebook"></i></a>
+            <a href = "https://www.facebook.com/people/IndieTrip/61558576468798/" target="_blank" className="hover:text-blue-700  text-[#1877F2] text-3xl transition-all"><i class="fa-brands fa-square-facebook"></i></a>
             <Link className="hover:text-gray-800  text-black-950 text-3xl transition-all"><i class="fa-brands fa-square-x-twitter"></i></Link>
             <a href="https://www.instagram.com/indietrip_/?igsh=MTNidmVzbjV0cDJxcA%3D%3D" className="hover:text-pink-700 text-[#f656c6] text-3xl transition-all"><i class="fa-brands fa-square-instagram"></i></a>
             <Link className="hover:text-blue-700  text-[#1877F2] text-3xl transition-all"><i class="fa-brands fa-linkedin"></i></Link>
