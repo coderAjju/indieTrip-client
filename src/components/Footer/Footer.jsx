@@ -58,9 +58,9 @@ const Footer = () => {
         <div>
           <h2 className="font-bold text-xl text-white">Connect With Us</h2>
           <div className="flex mt-4 space-x-2">
-            <Link to={"https://www.facebook.com/people/IndieTrip/61558576468798/"} className="hover:text-blue-700  text-[#1877F2] text-3xl transition-all"><i class="fa-brands fa-square-facebook"></i></Link>
+            <a href = "https://www.facebook.com/people/IndieTrip/61558576468798/" className="hover:text-blue-700  text-[#1877F2] text-3xl transition-all"><i class="fa-brands fa-square-facebook"></i></a>
             <Link className="hover:text-gray-800  text-black-950 text-3xl transition-all"><i class="fa-brands fa-square-x-twitter"></i></Link>
-            <Link to={"https://www.instagram.com/indietrip_/?igsh=MTNidmVzbjV0cDJxcA%3D%3D"} className="hover:text-pink-700 text-[#f656c6] text-3xl transition-all"><i class="fa-brands fa-square-instagram"></i></Link>
+            <a href="https://www.instagram.com/indietrip_/?igsh=MTNidmVzbjV0cDJxcA%3D%3D" className="hover:text-pink-700 text-[#f656c6] text-3xl transition-all"><i class="fa-brands fa-square-instagram"></i></a>
             <Link className="hover:text-blue-700  text-[#1877F2] text-3xl transition-all"><i class="fa-brands fa-linkedin"></i></Link>
           </div>
           <h2 className="font-bold text-xl mt-4 text-white">We Accept</h2>
