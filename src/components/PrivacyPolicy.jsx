@@ -1,8 +1,10 @@
 import React from 'react'
+import ScrollToTop from './ScrollToTop'
 
 const PrivacyPolicy = () => {
     return (
         <>
+        <ScrollToTop />
             <div className='w-[90%] mx-auto my-4'>
                 <h1 className=' text-2xl font-bold my-3'>Privacy Policy</h1>
                 <p>Last updated: June 16, 2024</p>
