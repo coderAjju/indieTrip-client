@@ -1,5 +1,5 @@
 import React from 'react';
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import visaLogo from '../../assets/visa-logo.svg'
 import paytmLogo from '../../assets/paytm-logo.svg'
 import upiLogo from '../../assets/upi-logo.svg'
@@ -10,9 +10,9 @@ const Footer = () => {
     <div className="bg-gray-600 text-black p-6">
       <div className="flex flex-col md:flex-row justify-between gap-3">
         <div className="mb-6 md:mb-0 md:w-[500px]">
-        <Link to='/' className='flex justify-start items-center'>
+          <Link to='/' className='flex justify-start items-center'>
             <img className='w-36' src={logo} alt="logo" />
-           </Link>
+          </Link>
           <div className="mt-4">
             <div className="flex items-start mb-4">
               <span className="mr-2">🌍</span>
@@ -48,17 +48,21 @@ const Footer = () => {
         <div className="mb-6 md:mb-0 text-white">
           <h2 className="font-bold text-xl">Contact Us</h2>
           <div className="mt-4">
-            <p>Delhi Address: 102, 2nd Floor, Nehru Complex, Pandav Nagar, Delhi - 110092</p>
-            <p>Lucknow: Lgf-137, Khazana Market Ashiyana Lucknow UP-226012</p>
-            <p>CHENNAI: No. 58 AP Road Chennai Tamilnadu 600112</p>
-            <p>📞 +916395952025</p>
-            <p>✉️ info@indietrip.com</p>
+            <p>Building No./Flat No.: Naya makan</p>
+            <p>Road/Street: Manjha Meerpur Dwaba</p>
+            <p>Locality/Sub Locality: MB Das Gali Vasudev Ghat</p>
+            <p>City/Town/Village: Ayodhya</p>
+            <p>District: Ayodhya</p>
+            <p>State: Uttar Pradesh</p>
+            <p>PIN Code: 224123</p>
+            <p>Email: saurabhindietrip09@gmail.com</p>
+            <p>Phone No: +919696746521</p>
           </div>
         </div>
         <div>
           <h2 className="font-bold text-xl text-white">Connect With Us</h2>
           <div className="flex mt-4 space-x-2">
-            <a href = "https://www.facebook.com/people/IndieTrip/61558576468798/" target="_blank" className="hover:text-blue-700  text-[#1877F2] text-3xl transition-all"><i class="fa-brands fa-square-facebook"></i></a>
+            <a href="https://www.facebook.com/people/IndieTrip/61558576468798/" target="_blank" className="hover:text-blue-700  text-[#1877F2] text-3xl transition-all"><i class="fa-brands fa-square-facebook"></i></a>
             <Link className="hover:text-gray-800  text-black-950 text-3xl transition-all"><i class="fa-brands fa-square-x-twitter"></i></Link>
             <a href="https://www.instagram.com/indietrip_/?igsh=MTNidmVzbjV0cDJxcA%3D%3D" className="hover:text-pink-700 text-[#f656c6] text-3xl transition-all"><i class="fa-brands fa-square-instagram"></i></a>
             <Link className="hover:text-blue-700  text-[#1877F2] text-3xl transition-all"><i class="fa-brands fa-linkedin"></i></Link>
