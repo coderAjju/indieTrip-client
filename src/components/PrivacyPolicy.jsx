@@ -181,7 +181,7 @@ const PrivacyPolicy = () => {
                 <h2 className=' text-2xl font-bold my-2'>Contact Us</h2>
                 <p>If you have any questions about this Privacy Policy, You can contact us:</p>
                 <ul style={{listStyleType:"disc"}} className='ml-8'>
-                    <li>By email: upadhyayajay437@gmail.com</li>
+                    <li>By email: saurabhindietrip09@gmail.com</li>
                 </ul>
             </div>
         </>
