@@ -53,7 +53,7 @@ const TopDestination = () => {
                 className="w-full h-full max-w-[300px] rounded-lg object-cover"
               />
               {/* overlay section */}
-              <div className="absolute left-0 top-0 opacity-100 p-4 w-full h-full bg-black/60 backdrop-blur-sm duration-500 lg:top-[-100%] lg:opacity-0 lg:group-hover:opacity-100 lg:group-hover:top-0 lg:group-hover:backdrop-blur-sm">
+              <div className="absolute left-0 top-[-100%] opacity-0 group-hover:opacity-100 group-hover:top-[0] p-4 w-full h-full bg-black/60 group-hover:backdrop-blur-sm duration-500">
                 <div className="space-y-4">
                   <Slide cascade>
                     <h1 className="text-3xl font-bold">{title}</h1>

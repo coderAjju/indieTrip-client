@@ -56,7 +56,7 @@ const Footer = () => {
             <p>State: Uttar Pradesh</p>
             <p>PIN Code: 224123</p>
             <p>Email: saurabhindietrip09@gmail.com</p>
-            <p>Phone No: +919696746521</p>
+            <p>Phone No: +919696785625</p>
           </div>
         </div>
         <div>

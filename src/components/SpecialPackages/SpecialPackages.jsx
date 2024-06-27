@@ -8,10 +8,12 @@ import vanarasiPackage1 from '../../assets/varanasi/varanasiPackage1.jpg'
 import himachalpradesh from '../../assets/himachalPradesh/himachalPradeshPackage2.jpg'
 import '../Home/Home.css'
 import { useNavigate } from 'react-router-dom'
+import ScrollToTop from '../ScrollToTop'
 const SpecialPackages = () => {
     const navigate = useNavigate();
     return (
         <>
+        <ScrollToTop/>
             <div className='lg:w-[1200px] md:w-[767px] mx-auto'>
                 <button onClick={() => navigate(-1)} className='ml-2 mt-4 p-2 px-4 active:bg-blue-600 active:text-white border-gray-400 border-2 rounded'>Previous</button>
                 <h1 className='font-bold md:text-4xl py-4 text-3xl  md:pl-0 pl-2'>Special Packages</h1>

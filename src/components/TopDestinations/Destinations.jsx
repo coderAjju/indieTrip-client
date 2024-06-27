@@ -6,6 +6,7 @@ import himachalPradesh from '../../assets/himachalPradesh/himachalPradeshPackage
 import goaImage from '../../assets/Goa/goaPackage1.jpg'
 import { Slide } from "react-awesome-reveal";
 import { Link, useNavigate } from "react-router-dom";
+import ScrollToTop from "../ScrollToTop";
 
 const CardsData = [
   {
@@ -42,7 +43,9 @@ const CardsData = [
 const Destinations = () => {
   const navigate = useNavigate();
   return (
-    <div className="lg:w-[1200px] md:w-[767px] mx-auto">
+   <>
+   <ScrollToTop/>
+     <div className="lg:w-[1200px] md:w-[767px] mx-auto">
       <button onClick={() => navigate(-1)} className='mt-4 ml-2 p-2 px-4 active:bg-blue-600 active:text-white border-gray-400 border-2 rounded'>Previous</button>
       <h1 className=" w-full font-bold md:text-4xl py-3 text-3xl md:pl-0 pl-2">Top Destinations</h1>
       {/* cards section */}
@@ -65,7 +68,7 @@ const Destinations = () => {
                     <h1 className="text-3xl font-bold">{title}</h1>
                     <div>
                       <Link onClick={()=>navigate(link) }>
-                        <button className="border border-white px-4 py-2 rounded-lg hover:bg-black/20 duration-300">
+                        <button className="border border-white px-4 py-2 rounded-lg hover:bg-black/20 duration-300 hover:bg-blue-600">
                           View
                         </button>
                       </Link>
@@ -79,6 +82,7 @@ const Destinations = () => {
 
       </div>
     </div>
+   </>
   );
 };
 
